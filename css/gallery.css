@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: hsla(217, 67%, 52%, 1);
+    background: linear-gradient(
+      270deg,
+      hsla(217, 67%, 52%, 1) 50%,
+      hsla(231, 53%, 50%, 1) 80%
+    );
+    background: -moz-linear-gradient(
+      270deg,
+      hsla(217, 67%, 52%, 1) 50%,
+      hsla(231, 53%, 50%, 1) 80%
+    );
+    background: -webkit-linear-gradient(
+      270deg,
+      hsla(217, 67%, 52%, 1) 50%,
+      hsla(231, 53%, 50%, 1) 80%
+    );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3372D6", endColorstr="#3C50C1", GradientType=1 );
+  }
+  
+  .flex-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+  }
+  
+  .flex-nav-bar-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: gray;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 1em;
+  }
+  
+  .flex-nav-bar-item a {
+    color: #cccccc;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #cccccc;
+    padding: 0.5em;
+    border-radius: 0.5em;
+  }
+  
+  .flex-nav-bar-item a:hover {
+    background: hsla(217, 67%, 52%, 1);
+    background: linear-gradient(
+      180deg,
+      hsla(217, 67%, 52%, 1) 50%,
+      hsla(231, 53%, 50%, 1) 80%
+    );
+    background: -moz-linear-gradient(
+      180deg,
+      hsla(217, 67%, 52%, 1) 50%,
+      hsla(231, 53%, 50%, 1) 80%
+    );
+    background: -webkit-linear-gradient(
+      180deg,
+      hsla(217, 67%, 52%, 1) 50%,
+      hsla(231, 53%, 50%, 1) 80%
+    );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3372D6", endColorstr="#3C50C1", GradientType=1 );
+    color: black;
+  }
+  
+  .flex-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 75%;
+    width: 100%;
+    padding-top: 4em;
+  }
+  
+  .flex-box-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.33%;
+    color: #cccccc;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 1em;
+  }
+  

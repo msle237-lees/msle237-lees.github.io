@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  background: hsla(217, 67%, 52%, 1);
+  background: linear-gradient(
+    270deg,
+    hsla(217, 67%, 52%, 1) 50%,
+    hsla(231, 53%, 50%, 1) 80%
+  );
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(217, 67%, 52%, 1) 50%,
+    hsla(231, 53%, 50%, 1) 80%
+  );
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(217, 67%, 52%, 1) 50%,
+    hsla(231, 53%, 50%, 1) 80%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3372D6", endColorstr="#3C50C1", GradientType=1 );
+}
+
+.flex-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+}
+
+.flex-nav-bar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: gray;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+  padding-top: 1em;
+}
+
+.flex-nav-bar-item a {
+  color: #cccccc;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid #cccccc;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+.flex-nav-bar-item a:hover {
+  background: hsla(217, 67%, 52%, 1);
+  background: linear-gradient(
+    180deg,
+    hsla(217, 67%, 52%, 1) 50%,
+    hsla(231, 53%, 50%, 1) 80%
+  );
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(217, 67%, 52%, 1) 50%,
+    hsla(231, 53%, 50%, 1) 80%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(217, 67%, 52%, 1) 50%,
+    hsla(231, 53%, 50%, 1) 80%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3372D6", endColorstr="#3C50C1", GradientType=1 );
+  color: black;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 75%;
+  width: 100%;
+  padding-top: 4em;
+}
+
+.flex-box-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33.33%;
+  color: #cccccc;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 1em;
+}
+
+.flex-box-item h1 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #cccccc;
+  margin-bottom: 0.5em;
+}
+
+.flex-box-item h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #cccccc;
+  margin-bottom: 0.5em;
+}
+
+.flex-box-item ul, li {
+  list-style: circle;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-box-carousel {
+  width: 50%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+input {
+  visibility: hidden;
+  opacity: 0;
+}
+label {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(187, 187, 187, 0.4);
+  transition: 0.4;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+label[for="slider2"] {
+  margin-top: 20px;
+}
+label[for="slider3"] {
+  margin-top: 40px;
+}
+label[for="slider4"] {
+  margin-top: 60px;
+}
+label[for="slider5"] {
+  margin-top: 80px;
+}
+
+input:checked + label,
+label:hover {
+  background: #fff;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.4s;
+  opacity: 1;
+  transform-origin: 50% 50%;
+}
+
+input:checked + .slide {
+  transform: translateY(100%);
+}
+input:checked + label + .slide {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide5 {
+  background-image: url(../assets/images/img_1538.jpg);
+}
+.slide4 {
+  background-image: url(../assets/images/img_1661.jpg);
+}
+.slide3 {
+  background-image: url(../assets/images/img_3549.jpg);
+}
+.slide2 {
+  background-image: url(../assets/images/img_4306.jpg);
+}
+.slide1 {
+  background-image: url(../assets/images/img_5090.jpg);
+}
+
+.flex-box-carousel-2 {
+  width: 50%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+input {
+  visibility: hidden;
+  opacity: 0;
+}
+label {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(187, 187, 187, 0.4);
+  transition: 0.4;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+label[for="slider6"] {
+  margin-top: 20px;
+}
+label[for="slider7"] {
+  margin-top: 40px;
+}
+label[for="slider8"] {
+  margin-top: 60px;
+}
+label[for="slider9"] {
+  margin-top: 80px;
+}
+
+input:checked + label,
+label:hover {
+  background: #fff;
+}
+
+.slide-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.4s;
+  opacity: 1;
+  transform-origin: 50% 50%;
+}
+
+input:checked + .slide-2 {
+  transform: translateY(100%);
+}
+input:checked + label + .slide-2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide9 {
+  background-image: url('../assets/images/DJI_0067.JPG');
+}
+.slide8 {
+  background-image: url('../assets/images/DJI_0066.JPG');
+}
+.slide7 {
+  background-image: url('../assets/images/DJI_0065.JPG');
+}
+.slide6 {
+  background-image: url('../assets/images/DJI_0064.jpg');
+}
