@@ -249,3 +249,28 @@ input:checked + label + .slide {
   color: #cccccc;
 }
 
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  width: 100%;
+}
+
+/* form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #cccccc;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 20px; 
+} */

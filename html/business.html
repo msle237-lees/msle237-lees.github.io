@@ -81,8 +81,27 @@
         <h1>Website Development</h1>
       </div>
     </div>
-    <div class="flex-box-item">
-      
+    <div class="flex-box">
+      <div class="flex-box-item">
+        <h1>Get in Contact with me!</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+
+          <label for="interest">Interest:</label>
+          <input type="radio" id="business" name="interest" value="business"><label for="business">Real Estate Photography and Videography</label>
+          <input type="radio" id="editing" name="interest" value="editing"><label for="editing">Photo and Video Editing</label>
+          <input type="radio" id="website" name="interest" value="website"><label for="website">Website Development</label>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Anything else.." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit" onclick="submit()">
+        </form>
+      </div>
     </div>
     <div class="flex-box-footer">
         <div class="flex-box-footer-item">
@@ -90,11 +109,6 @@
             <h2>Software Team Lead</h2>
             <h2>Underwater Robotics Team</h2>
             <h2>Kennesaw State University</h2>
-        </div>
-        <div class="flex-box-footer-item">
-            <h1>Contact</h1>
-            <h2>Phone: 770-335-6741</h2>
-            <h2>Email: msle237.lees@gmail.com </h2>
         </div>
     </div>
   </body>
