@@ -130,10 +130,12 @@ body {
 }
 
 form {
+  display: inline;
   justify-content: center;
   align-items: center;
   height: 75%;
   width: 80%;
+  padding-left: 32%;
 }
 
 form label {
@@ -141,22 +143,23 @@ form label {
   margin-bottom: 8px;
   font-size: 1.2em;
   font-weight: 600;
-  color: #cccccc;
+  color: black;
 }
 
 form input {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 5px;
   margin-bottom: 20px; 
   height: 40px;
+  background-color: antiquewhite;
 }
 
 form input[type="date"] {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -164,6 +167,16 @@ form input[type="date"] {
   height: 20px;
 }
 
+form select {
+  display: block;
+  width: 52%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 20px; 
+  height: 40px;
+  background-color: antiquewhite;
+}
 
 form input:focus {
   outline: none;
@@ -172,7 +185,7 @@ form input:focus {
 
 form button {
   display: block;
-  width: 100%;
+  width: 52%;
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 5px;
