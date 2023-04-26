@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="”utf-8”" />
+    <meta name="”author”" content="”Michael" Lees” />
+    <meta name="”description”" content="”Michael" Lees Portfolio” />
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+
+    <title>Michael Lees Portfolio About</title>
+
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+
+  <body>
+    <div class="flex-nav-bar">
+      <div class="flex-nav-bar-item">
+        <a href="../index.html">Home</a>
+      </div>
+      <div class="flex-nav-bar-item">
+        <a href="about.html">About</a>
+      </div>
+      <div class="flex-nav-bar-item">
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="flex-box">
+      <form id="form" onsubmit="formsub(event)">
+        <h2>Contact me by filling in the form below</h2>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your phone number.." />
+
+        <label for="choices" id="choices">What are you contacting me about?</label>
+        <select id="choices" name="choices">
+          <option value="real_estate">Real Estate Photography</option>
+          <option value="video_editing">Video Editing</option>
+          <option value="photo_editing">Photo Editing</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="date_required_by">What day would work best for you:</label>
+        <input type="date" id="date_required_by" name="date_required_by" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="flex-box">
+
+    </div>
+  </body>
+  <script>
+    function formsub(event) {
+      event.preventDefault();
+      var fname = document.getElementById("fname");
+      var lname = document.getElementById("lname");
+      var email = document.getElementById("email");
+      var phone = document.getElementById("phone");
+      var choices = document.getElementById("choices");
+      var date_required_by = document.getElementById("date_required_by");
+      var data = {
+        fname: fname.value,
+        lname: lname.value,
+        email: email.value,
+        phone: phone.value,
+        choices: choices.value,
+        date_required_by: date_required_by.value
+      };
+
+      console.log(data);
+    }
+  </script>
+</html>

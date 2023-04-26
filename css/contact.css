@@ -129,3 +129,82 @@ body {
   color: black;
 }
 
+form {
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  width: 80%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #cccccc;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 20px; 
+  height: 40px;
+}
+
+form input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 20px; 
+  height: 20px;
+}
+
+
+form input:focus {
+  outline: none;
+  border-color: #3372D6;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #3372D6;
+  color: #cccccc;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.flex-box-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  color: #cccccc;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 1em;
+}
+
+.flex-box-footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33.33%;
+  color: #cccccc;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 1em;
+}
